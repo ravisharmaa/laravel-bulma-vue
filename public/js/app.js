@@ -996,8 +996,8 @@ Vue.component('example-component', __webpack_require__(38));
 
 var app = new Vue({
   el: '#app',
-  router: __WEBPACK_IMPORTED_MODULE_0__router__["a" /* default */],
-  store: store
+  router: __WEBPACK_IMPORTED_MODULE_0__router__["a" /* default */]
+
 });
 
 /***/ }),
@@ -42958,6 +42958,33 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -42980,18 +43007,69 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [
-              _vm._v("Example Component")
+    return _c("section", { staticClass: "hero is-fullheight" }, [
+      _c("div", { staticClass: "hero-body" }, [
+        _c("div", { staticClass: "container has-text-centered" }, [
+          _c("div", { staticClass: "column is-4 is-offset-4" }, [
+            _c("h3", { staticClass: "title has-text-grey" }, [_vm._v("Login")]),
+            _vm._v(" "),
+            _c("p", { staticClass: "subtitle has-text-grey" }, [
+              _vm._v("Please login to proceed.")
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "panel-body" }, [
-              _vm._v(
-                "\n                    I'm an example component!\n                "
-              )
+            _c("div", { staticClass: "box" }, [
+              _c("figure", { staticClass: "avatar" }, [
+                _c("img", { attrs: { src: "https://placehold.it/128x128" } })
+              ]),
+              _vm._v(" "),
+              _c("form", [
+                _c("div", { staticClass: "field" }, [
+                  _c("div", { staticClass: "control" }, [
+                    _c("input", {
+                      staticClass: "input is-success",
+                      attrs: {
+                        type: "text",
+                        placeholder: "Text input",
+                        value: "bulma"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "field" }, [
+                  _c("div", { staticClass: "control" }, [
+                    _c("input", {
+                      staticClass: "input is-success",
+                      attrs: {
+                        type: "text",
+                        placeholder: "Text input",
+                        value: "bulma"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "field" }, [
+                  _c("label", { staticClass: "checkbox" }, [
+                    _c("input", { attrs: { type: "checkbox" } }),
+                    _vm._v(
+                      "\n                                Remember me\n                            "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("a", { staticClass: "button is-block is-info is-large" }, [
+                  _vm._v("Login")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "has-text-grey" }, [
+              _c("a", { attrs: { href: "../" } }, [_vm._v("Sign Up")]),
+              _vm._v("  · \n                    "),
+              _c("a", { attrs: { href: "../" } }, [_vm._v("Forgot Password")]),
+              _vm._v("  · \n                    "),
+              _c("a", { attrs: { href: "../" } }, [_vm._v("Need Help?")])
             ])
           ])
         ])
@@ -43034,10 +43112,8 @@ if (false) {
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
 
-var routes = [{ path: '', component: 'Home' }];
-
-/* harmony default export */ __webpack_exports__["a"] = (router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
-    routes: routes
+/* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
+  routes: [{ path: '', component: __WEBPACK_IMPORTED_MODULE_2__components_ExampleComponent___default.a }]
 }));
 
 /***/ }),
