@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/login', function(Illuminate\Http\Request $request) {
+   return response()->json('success', '200');
+});

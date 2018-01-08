@@ -1,6 +1,7 @@
 import  Vue from 'vue'
 import  Router from 'vue-router'
-import ExampleComponent from '../components/ExampleComponent'
+import Login from '../components/LoginComponent'
+import App from '../components/App'
 
 Vue.use(Router);
 
@@ -8,6 +9,6 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-      { path:'', component:ExampleComponent}
+      { path:'', component:Login },
   ]
 });
