@@ -13,13 +13,13 @@
                             <form action="#" @submit.prevent="submitForm">
                                 <div class="field">
                                     <div class="control">
-                                        <input class="input is-success" type="text" placeholder="Text input" v-model="form.username">
+                                        <input class="input" type="text" placeholder="Text input" v-model="form.formFields.username">
                                     </div>
                                 </div>
 
                                 <div class="field">
                                     <div class="control">
-                                        <input class="input is-danger" type="text" placeholder="Text input" v-model="form.password">
+                                        <input class="input" type="text" placeholder="Text input" v-model="form.FormFields.password">
                                     </div>
                                 </div>
                                 <div class="field">
@@ -40,16 +40,19 @@
 </template>
 
 <script>
-    import Form from "../helpers/Form";
+    import {mapGetters } from 'vuex'
     export default {
-        data () {
-          return {
-             form: new Form({
-                 username:'',
-                 password:''
-             })
-          }
+
+        computed: mapGetters ({
+                form:'auth/FormData'
+
+            }),
+
+
+        mounted() {
+            console.log(form)
         },
+
 
         methods:{
             submitForm(){

@@ -1,0 +1,26 @@
+[
+    {
+        "level": "WARNING",
+        "message": "http:\/\/localhost\/dashboard\/ - The SSL certificate used to load resources from https:\/\/community.apachefriends.org will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https:\/\/g.co\/chrome\/symantecpkicerts for more information.",
+        "source": "security",
+        "timestamp": 1515497558437
+    },
+    {
+        "level": "SEVERE",
+        "message": "https:\/\/www.facebook.com\/connect\/ping?client_id=277385395761685&domain=localhost&origin=1&redirect_uri=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Dfb6260ea7ec288%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff24711e00403ab%26relation%3Dparent&response_type=token%2Csigned_request%2Ccode&sdk=joey - Failed to load resource: net::ERR_CONNECTION_CLOSED",
+        "source": "network",
+        "timestamp": 1515497571894
+    },
+    {
+        "level": "SEVERE",
+        "message": "https:\/\/www.facebook.com\/impression.php\/f3e156af383385\/?api_key=277385395761685&lid=115&payload=%7B%22source%22%3A%22jssdk%22%7D - Failed to load resource: net::ERR_CONNECTION_CLOSED",
+        "source": "network",
+        "timestamp": 1515497571894
+    },
+    {
+        "level": "SEVERE",
+        "message": "https:\/\/staticxx.facebook.com\/connect\/xd_arbiter\/r\/lY4eZXm_YWu.js?version=42#channel=f24711e00403ab&origin=http%3A%2F%2Flocalhost - Failed to load resource: net::ERR_CONNECTION_CLOSED",
+        "source": "network",
+        "timestamp": 1515497571894
+    }
+]
