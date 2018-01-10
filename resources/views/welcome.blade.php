@@ -14,6 +14,7 @@
     <body>
         <div id="app">
             <app></app>
+            <a href="">Click Me</a>
         </div>
 
     </body>

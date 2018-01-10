@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use Laravel\Dusk\Browser;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -14,8 +15,9 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
+        $this->browse(function(Browser $browser) {
+            $browser->visit('/')->assertSee('Click Me');
+        });
 
-        $response->assertStatus(200);
     }
 }
